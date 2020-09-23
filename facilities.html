@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Me and My Best Friend | Koira | Kahvila | Koirapuisto</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="landing.html">MMBF</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="facilities.html"
+              >Facilities<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cafeandshop2.html">Cafe & Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="training.html">Training</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Navigation left side
+    <div class="page-nav mr-5">
+      <a href="index.html" class="btn"
+        ><i class="fas fa-arrow-circle-left fa-2x"></i
+      ></a>
+      <br /><br />
+      <a href="cafeandshop2.html" class="btn"
+        ><i class="fas fa-arrow-circle-right fa-2x"></i
+      ></a>
+    </div>-->
+
+    <!--Main section-->
+    <section class="container bg-green">
+      <div class="row mt-1">
+        <div class="col-lg-6 pr-0 pl-0">
+          <img src="img/nature-forest-trees-path2.jpg" alt="forrest" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="text-center font-weight-bold">Facilities</h1>
+          <p class="text">
+            Total area for our facilities is about 4 ha. The whole area is
+            fenced with 1.8m high solid fence to ensure that all our adventures
+            friends stay safe. <br /><br />
+            Forest area (2 ha) is for all the friendly dogs to run free and have
+            fun with their humans and friends. Together we also keep our forest
+            clean. Poop bags and plenty of bins provided by us!
+          </p>
+
+          <!--Area map with grid-->
+          <div class="gridcontainer">
+            <div class="d1 pt-5">
+              <a data-toggle="modal" href="#forest">Forest</a>
+            </div>
+            <div class="d2 pt-4">
+              <a data-toggle="modal" href="#hall">Hall</a>
+            </div>
+            <div class="d3 pt-4">
+              <a data-toggle="modal" href="#cafe">Cafe & Shop </a>
+            </div>
+            <div class="d4 pt-4">
+              <a data-toggle="modal" href="#smalldogs">Small dogs</a>
+            </div>
+            <div class="d5 pt-3">
+              <a data-toggle="modal" href="#parking">Parking</a>
+            </div>
+            <div class="d6 pt-3">
+              <a data-toggle="modal" href="#puppies">Puppies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <div class="container bg-darkgrey text-center pt-5 my-1">
+        <div class="row">
+          <div class="col-sm first-list">
+            <ul class="font-weight-bold">
+              <li>
+                <a class="" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="" href="#">Who we are</a>
+              </li>
+              <li>
+                <a data-toggle="modal" href="#myAddress">Find us</a>
+              </li>
+              <li>
+                <a data-toggle="modal" href="#myPhone">Phone</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm font-weight-bold">
+            <i class="fa fa-paw fa-4x py-5" aria-hidden="true"></i>
+            <p>Copyright &copy; <span id="year"></span></p>
+            <p>Me and My Best Friend</p>
+          </div>
+          <div class="col-sm second-list py-5 pr-5">
+            <ul class="font-weight-bold">
+              <li>
+                <a class="" href="privacy.html" target="_blank"
+                  >Privacy policy</a
+                >
+              </li>
+              <li>
+                <a class="" href="#">Legal notice</a>
+              </li>
+              <li>
+                <a class="" href="#">Park Rules</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade text-dark" id="myPhone">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>By calling</h4>
+            <p class="font-weight-bold">+358 45 1580233</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="myAddress">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Visit us</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Vanha Myllylammentie</h4>
+            <p class="font-weight-bold">Kirkkonummi</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4720.915619023931!2d24.470458367396166!3d60.16582587008346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468d8d5a01345fc9%3A0x414e8d7a27be3762!2sVanha%20Myllylammentie%2C%2002400%20Kirkkonummi!5e0!3m2!1sfi!2sfi!4v1600609016341!5m2!1sfi!2sfi"
+              width="400"
+              height="300"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="forest">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Forest</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Beautiful 2 ha fenced forest area for all the dogs and their human
+              friends. Open areas for nice picnic and rest. Paths are marked
+              with color codes.
+            </p>
+            <p>Open 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="hall">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Hall</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi
+              debitis repudiandae ratione dolorum sit laudantium voluptatibus
+              molestias voluptates, illum molestiae fugiat sequi officia
+              ducimus?
+            </p>
+            <p>Open: Weekdays 9-22, Weekends 11-18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="cafe">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cafe & Shop</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              atque vel suscipit itaque, explicabo ipsa consequatur dolore animi
+              molestiae porro saepe! Modi odit explicabo corrupti?
+            </p>
+            <p>Open: Weekdays 9-20, Weekends 11-18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="smalldogs">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Small dogs</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+              deleniti quibusdam error aperiam harum perferendis quia doloremque
+              corrupti neque soluta. Perspiciatis sint maxime amet consequuntur!
+            </p>
+            <p>Open 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="puppies">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Puppies</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              necessitatibus dicta molestias amet repellendus, rem at tenetur
+              cum fugit tempora quaerat praesentium quasi reiciendis mollitia.
+            </p>
+            <p>Open 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="parking">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Parking</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Free parking for all the dog park visitors.</p>
+            <p>Open 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //Javascriptillä nykyinen vuosi copyrightiin
+      $('#year').text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
